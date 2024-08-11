@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="crud">
+    <div class="head">
+        <h2>CRUD</h2>
+        <p>PRODUCT MANGEMENT SYSTEM</p>
+    </div>
+    <div class="inputs">
+        <input placeholder="title" type="text" id="title">
+        <div class="price">
+            <input onkeyup="getTotal()" placeholder="price" type="number" id="price">
+            <input onkeyup="getTotal()" placeholder="taxes" type="number" id="taxes">
+            <input onkeyup="getTotal()" placeholder="ads" type="number" id="ads">
+            <input onkeyup="getTotal()" placeholder="discount" type="number" id="discount">
+            <small id="total"></small>
+        </div>
+        <input placeholder="count" type="number" id="count">
+        <input placeholder="category" type="number" id="category">
+        <button id="submit">Create</button>
+
+    </div>
+
+
+    <div class="outputs">
+        <div class="searchBlock">
+            <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="Search">
+            <div class="btnSearch">
+                <button id="searchTitle">Search By Title</button>
+                <button id="searchCategory">Search By Title</button>
+            </div>
+        </div>
+<div id="deleteAll">
+
+</div>
+        <table>
+            <tr>
+                <th>count</th>
+                <th>title</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>total</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+
+<tbody id="tbody">
+   
+</tbody>
+
+        </table>
+
+    </div>
+
+
+
+
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
